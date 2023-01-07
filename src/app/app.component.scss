@@ -1,0 +1,53 @@
+.main-outer{
+  width: 100%;
+  overflow-x: hidden;
+
+  .top-bar-1{
+    width: 100%;
+    min-height: 40px;
+    height: auto;
+    background-color: #2c3e50;
+    padding: 0 8%;
+
+
+    .top-bar-1-content{
+      height: 40px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+
+      p{
+        color: white;
+        margin: 0;
+        font-size: 18px;
+        font-family: 'Kanit', sans-serif;
+
+        span:hover{
+          cursor: pointer;
+          color: #c0392b;
+
+          a{
+            color: #c0392b;
+          }
+        }
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .top-bar-2{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    border: 1px solid red;
+
+    img{
+      width: 150px;
+      border: 1px solid red;
+    }
+  }
+}
