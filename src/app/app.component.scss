@@ -44,8 +44,13 @@
     min-height: 100px;
     height: auto;
 
-    img{
-      width: 150px;
+    .logo{
+      img{
+        width: 150px;
+      }
+    }
+    .logo:hover{
+      cursor: pointer;
     }
   }
 }

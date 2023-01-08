@@ -2,7 +2,8 @@
 <div class="col-12">
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
@@ -47,35 +48,471 @@
   <div class="d-lg-flex d-md-flex align-items-center justify-content-between">
 
     <div class="col-12 col-sm-12 col-md-4 col-lg-4" style="padding: 10px">
-      <div class="d-flex align-items-start justify-content-start" style="position: relative;">
+      <div class="d-flex align-items-start justify-content-start banners">
         <img src="./assets/imgs/home-banner-1.jpg" alt="banner-1" width="100%">
         <div style="position: absolute; margin-top: 15%; margin-left: 10%;">
           <span style="font-size: 3vh; font-weight: bold">New</span> <br>
           <span style="color: darkmagenta; font-size: 4vh; font-weight: bolder">Clothing</span> <br>
         </div>
+        <div class="banners-content fade" routerLink=""><u>Shop Now</u></div>
       </div>
     </div>
 
     <div class="col-12 col-sm-12 col-md-4 col-lg-4" style="padding: 10px">
-      <div class="d-flex align-items-end justify-content-end" style="position: relative;">
+      <div class="d-flex align-items-end justify-content-end banners">
         <img src="./assets/imgs/home-banner-2.jpg" alt="banner-2" width="100%">
         <div style="position: absolute; margin-bottom: 15%; margin-right: 10%">
           <span style="color: white; font-size: 2vh; font-weight: bold">Up to</span> <br>
           <span style="color: white; font-size: 5vh; font-weight: bolder">25% OFF</span> <br>
         </div>
+        <div class="banners-content fade" routerLink=""><u>Shop Now</u></div>
       </div>
     </div>
 
     <div class="col-12 col-sm-12 col-md-4 col-lg-4" style="padding: 10px">
-      <div class="d-flex align-items-start justify-content-start" style="position: relative;">
+      <div class="d-flex align-items-start justify-content-start banners">
         <img src="./assets/imgs/home-banner-3.jpg" alt="banner-3" width="100%">
         <div style="position: absolute; margin-top: 15%; margin-left: 10%">
           <span style="font-size: 2vh; font-weight: bold">New</span> <br>
           <span style="color: darkmagenta; font-size: 3vh; font-weight: bolder">Arrivals</span> <br>
           <span><u>shop now</u></span>
         </div>
+        <div class="banners-content fade" routerLink=""><u>Shop Now</u></div>
       </div>
     </div>
 
+  </div>
+
+  <div class="title1">
+    <div class="d-flex align-items-center justify-content-center flex-column" style="padding: 5vw 0">
+      <h1>Popular Products</h1>
+      <div style="width: 10%; height: 3px; border-radius: 5px; background-color: #c0392b"></div>
+    </div>
+  </div>
+
+  <div class="popular-products">
+    <div class="popular-products-inner">
+      <div class="product-item">
+        <img src="./assets/imgs/model-1.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 001</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-2.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 002</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-3.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 003</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-4.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 004</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-5.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 005</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-6.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 006</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-banner">
+    <div class="d-lg-flex d-md-flex">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 banners">
+        <img src="./assets/imgs/home-banner-4.jpg " alt="banner">
+        <div class="banners-content fade" routerLink=""><span style="font-size: 5vw;">Explore</span></div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 banners">
+        <img src="./assets/imgs/home-banner-5.jpg " alt="banner">
+        <div class="banners-content fade" routerLink=""><span style="font-size: 5vw;">Explore</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="title1">
+    <div class="d-flex align-items-center justify-content-center flex-column" style="padding: 5vw 0">
+      <h1>Best Sellers</h1>
+      <div style="width: 10%; height: 3px; border-radius: 5px; background-color: #c0392b"></div>
+    </div>
+  </div>
+
+  <div class="popular-products">
+    <div class="popular-products-inner">
+      <div class="product-item">
+        <img src="./assets/imgs/model-1.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 001</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-2.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 002</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-3.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 003</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-4.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 004</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-5.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 005</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./assets/imgs/model-6.jpg" alt="model 1">
+        <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+          <button>Add to Cart</button>
+          <div class="product-buttons d-flex justify-content-between">
+            <button>
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button>
+              <mat-icon>autorenew</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="product-det">
+            <h2>Product 006</h2>
+            <div class="product-price d-flex justify-content-center">
+              <div class="disable-price">
+                <del>$84.00</del>
+              </div>&nbsp;&nbsp;
+              <div class="price"> $78.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-reviews">
+    <div class="col-12">
+      <div id="top-reviews" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#top-reviews" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#top-reviews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#top-reviews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="d-flex">
+              <div class="reviewer-profile">
+                <img src="./assets/imgs/reviewer-profile.jpg" alt="profile">
+              </div>
+              <div class="review d-flex flex-column">
+                <span style="font-size: 50px">&ldquo;</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fugiat fugit mollitia, nemo perferendis
+                  quod vitae! Beatae blanditiis delectus deleniti doloribus error laboriosam magni, minus molestias nobis
+                  quas ratione tempore unde veritatis! Ab eum impedit laboriosam repellat saepe tenetur voluptatem.
+                  Accusamus atque fugit qui quisquam reiciendis rem ut voluptatem voluptates.</span><br>
+                <span style="color: black; font-weight: bold"><i>- William Genske</i></span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="d-flex">
+              <div class="reviewer-profile">
+                <img src="./assets/imgs/reviewer-profile.jpg" alt="profile">
+              </div>
+              <div class="review d-flex flex-column">
+                <span style="font-size: 50px">&ldquo;</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fugiat fugit mollitia, nemo perferendis
+                  quod vitae! Beatae blanditiis delectus deleniti doloribus error laboriosam magni, minus molestias nobis
+                  quas ratione tempore unde veritatis! Ab eum impedit laboriosam repellat saepe tenetur voluptatem.
+                  Accusamus atque fugit qui quisquam reiciendis rem ut voluptatem voluptates.</span><br>
+                <span style="color: black; font-weight: bold"><i>- William Genske</i></span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div class="reviewer-profile">
+                <img src="./assets/imgs/reviewer-profile.jpg" alt="profile">
+              </div>
+              <div class="review d-flex flex-column">
+                <span style="font-size: 50px">&ldquo;</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fugiat fugit mollitia, nemo perferendis
+                  quod vitae! Beatae blanditiis delectus deleniti doloribus error laboriosam magni, minus molestias nobis
+                  quas ratione tempore unde veritatis! Ab eum impedit laboriosam repellat saepe tenetur voluptatem.
+                  Accusamus atque fugit qui quisquam reiciendis rem ut voluptatem voluptates.</span><br>
+                <span style="color: black; font-weight: bold"><i>- William Genske</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
