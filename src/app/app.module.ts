@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {HomeComponent} from './components/home/home.component';
+import {NotFoundComponent} from './components/not-found/not-found.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
@@ -15,15 +15,16 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     HomeComponent,
     NotFoundComponent
   ],
-    imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      MatIconModule,
-      ReactiveFormsModule,
-      FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
