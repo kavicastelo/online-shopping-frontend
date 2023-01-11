@@ -1,3 +1,4 @@
+<!--top bar-->
 <div class="main-outer">
   <div class="row">
     <div class="col-12">
@@ -39,7 +40,8 @@
                 </form>
               </div>
               <div class="d-flex d-sm-flex align-items-center justify-content-end">
-                <p><mat-icon>add_shopping_cart</mat-icon>&nbsp; <span><b>$125.00</b></span></p>
+                <p>
+                  <mat-icon>add_shopping_cart</mat-icon>&nbsp; <span><b>$125.00</b></span></p>
               </div>
             </div>
           </div>
@@ -51,12 +53,15 @@
 </div>
 <!--navbar-->
 <hr>
-<div class="sticky-top d-lg-flex align-items-center" style="background-color: rgba(255,255,255,0.7); width: 100%; min-height: 60px;">
+<div class="sticky-top d-lg-flex align-items-center"
+     style="background-color: rgba(255,255,255,0.7); width: 100%; min-height: 60px;">
   <div class="d-lg-flex align-items-center justify-content-start container">
     <div class="d-flex d-sm-flex align-items-center justify-content-end">
       <nav class="navbar navbar-b navbar-trans navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -68,7 +73,8 @@
                 <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
                   Pages
                 </a>
                 <ul class="dropdown-menu">
@@ -78,24 +84,30 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
                   Shop
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
                   Blog
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
@@ -111,3 +123,70 @@
 </div>
 
 <router-outlet></router-outlet>
+
+<!--footer-->
+<div class="footer-outer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="d-lg-flex justify-content-center">
+
+        <div class="footer-content">
+          <h1 style="white-space: nowrap">ABOUT US</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae eius, laboriosam libero
+            officiis porro quia ratione reiciendis. Beatae blanditiis deserunt ea eligendi ipsum labore maiores officiis
+            reiciendis vero? Quas.</p>
+        </div>
+
+        <div class="d-md-flex justify-content-between">
+
+          <div class="footer-content">
+            <div class="d-flex justify-content-center">
+              <div class="d-flex flex-column" style="padding-right: 20px">
+                <h1 style="white-space: nowrap">CATEGORIES</h1>
+                <span>Fashion Sneakers</span>
+                <span>Jackets</span>
+                <span>Outdoor Shop</span>
+                <span>Pants</span>
+                <span>Shirts & Tops</span>
+                <span>Swim Shop</span>
+                <span>Swimwear</span>
+              </div>
+              <div class="d-flex flex-column" style=" padding-left: 20px">
+                <h1 style="white-space: nowrap">MY ACCOUNT</h1>
+                <span>Orders</span>
+                <span>Compare</span>
+                <span>Wishlist</span>
+                <span>Log In</span>
+                <span>Register</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-content d-flex flex-column">
+            <h1 style="white-space: nowrap">CONTACT INFO</h1>
+            <span class="d-flex align-items-center"><mat-icon>location_on</mat-icon>&nbsp;&nbsp; Lorem ipsum dolor sit amet, 123/6</span>
+            <span class="d-flex align-items-center"><mat-icon>phone</mat-icon>&nbsp;&nbsp; +11 1234567</span>
+            <span class="d-flex align-items-center"><mat-icon>email</mat-icon>&nbsp;&nbsp; info@gmil.com</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom d-flex d-sm-flex flex-column align-items-center justify-content-center">
+    <div class="footer-bottom d-md-flex d-lg-flex align-items-center justify-content-between" style="padding: 0 100px;">
+      <div class="d-flex align-items-center justify-content-center">
+        <span>Copyright &copy; 2023. All Rights Received.</span>
+      </div>
+      <div class="social-btn-set">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-google-plus"></i>
+      </div>
+    </div>
+  </div>
+</div>
