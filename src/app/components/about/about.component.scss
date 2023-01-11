@@ -1,0 +1,178 @@
+.main-thumbnail{
+  width: 100%;
+  max-height: 300px;
+  min-height: 100px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  img{
+    width: 100%;
+  }
+
+  .main-banner-content{
+    position: absolute;
+
+    h1{
+      color: white;
+      font-size: 3vw;
+      font-weight: bolder;
+    }
+
+    span:hover{
+      color: #c0392b;
+      cursor: pointer;
+    }
+  }
+}
+
+.about-main-context{
+  width: 100%;
+  height: auto;
+  padding: 5vw;
+
+  .context-img{
+    width: 100%;
+    padding: 2vw;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .context{
+    width: 100%;
+    padding: 2vw;
+
+    p{
+      color: dimgray;
+      font-size: 1.3vw;
+    }
+
+    span{
+      font-weight: bold;
+      font-size: 1.4vw;
+      padding: 1.1vw;
+
+      i{
+        border-radius: 100%;
+        background-color: #e74c3c;
+        padding: 0.6vw;
+        color: white;
+      }
+    }
+  }
+}
+
+.top-reviews{
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  background-color: #c0392b;
+  margin-top: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw 5vw;
+
+  .reviewer-profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    img{
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  .review{
+    width: 80%;
+    padding: 3vw;
+
+    span{
+      color: white;
+      font-size: 18px;
+    }
+  }
+}
+
+.home-end{
+  width: 100%;
+  height: 200px;
+
+  .home-end-content{
+    width: 100%;
+    min-height: 150px;
+    padding: 0 2vw;
+
+    .home-end-content-icon{
+      width: 4vw;
+      height: 4vw;
+
+      mat-icon{
+        font-size: 4vw;
+        margin: 0;
+      }
+    }
+
+    h1{
+      margin: 0;
+      font-size: 1.5vw;
+      font-weight: bold;
+    }
+
+    h3{
+      margin: 0;
+      color: #2c3e50;
+    }
+  }
+}
+
+.container{
+  .about-services-wrapper{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vw;
+
+    .ico-circle {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 50%;
+      line-height: 0.5;
+      margin: 3vw auto;
+      text-align: center;
+      box-shadow: 0 0 0 3px #636e72;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1{
+      font-size: 1.5vw;
+      font-weight: bold;
+    }
+
+    p{
+      text-align: center;
+      font-size: 1.1vw;
+      color: #636e72;
+    }
+  }
+  .about-services-wrapper:hover{
+    .ico-circle{
+      background-color: #636e72;
+      color: #fff;
+      box-shadow: 0 0 0 3px #fab1a0;
+      transition: all 500ms ease;
+    }
+  }
+}

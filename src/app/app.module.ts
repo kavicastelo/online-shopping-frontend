@@ -8,12 +8,14 @@ import {NotFoundComponent} from './components/not-found/not-found.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
