@@ -1,0 +1,31 @@
+.main-thumbnail{
+  width: 100%;
+  max-height: 300px;
+  min-height: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  img{
+    width: 100%;
+  }
+
+  .main-banner-content{
+    position: absolute;
+
+    h1{
+      color: white;
+      font-size: 3vw;
+      font-weight: bolder;
+      text-shadow: 0 0 10px #888;
+    }
+
+    span:hover{
+      color: #c0392b;
+      cursor: pointer;
+    }
+  }
+}
