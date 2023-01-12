@@ -13,6 +13,9 @@ import { FAQComponent } from './components/faq/faq.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatButtonModule} from "@angular/material/button";
+import { ContactComponent } from './components/contact/contact.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import {MatButtonModule} from "@angular/material/button";
     HomeComponent,
     NotFoundComponent,
     AboutComponent,
-    FAQComponent
+    FAQComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import {MatButtonModule} from "@angular/material/button";
     FormsModule,
     MatExpansionModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

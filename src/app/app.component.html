@@ -72,36 +72,112 @@
               <li class="nav-item">
                 <a class="nav-link" routerLink="/about">About Us</a>
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                    aria-expanded="false">
                   Pages
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" routerLink="/not-found">404 Page</a></li>
-                  <li><a class="dropdown-item" routerLink="/faq">FAQ</a></li>
-                  <li><a class="dropdown-item" href="#">Coming soon</a></li>
-                </ul>
+                <div class="dropdown-content">
+                  <a routerLink="/not-found">404 Not Found</a>
+                  <a routerLink="/faq">FAQ</a>
+                  <a href="#">Coming Soon</a>
+                </div>
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                    aria-expanded="false">
                   Shop
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="dropdown-content">
+                  <div class="d-lg-flex align-items-start justify-content-center">
+
+                    <div style="width: 100%;">
+                      <h3
+                        style="font-size: 1.2vw;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        font-family: 'Barlow', sans-serif;
+                        color: #2c3e50;
+                        margin: 1vw 2vw">
+                        SHOP PAGES</h3>
+                      <a href="#">Shop List View</a>
+                      <a href="#">Shop Grid View</a>
+                      <a href="#">Shop 3 Column</a>
+                      <a href="#">Shop 4 Column</a>
+                      <a href="#">Shop Left Sidebar</a>
+                      <a href="#">Shop Right Sidebar</a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div style="width: 1px; height: 20vw; margin: 2.5vw 0; background-color: #2c3e50;"></div>
+                    </div>
+
+                    <div style="width: 100%;">
+                      <h3
+                        style="font-size: 1.2vw;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        font-family: 'Barlow', sans-serif;
+                        color: #2c3e50;
+                        margin: 1vw 2vw">
+                        PRODUCT DETAILS</h3>
+                      <a href="#">Product Default</a>
+                      <a href="#">Product Left Sidebar</a>
+                      <a href="#">Product Right Sidebar</a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div style="width: 1px; height: 20vw; margin: 2.5vw 0; background-color: #2c3e50;"></div>
+                    </div>
+
+                    <div style="width: 100%;">
+                      <h3
+                        style="font-size: 1.2vw;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        font-family: 'Barlow', sans-serif;
+                        color: #2c3e50;
+                        margin: 1vw 2vw">
+                        EXTRA</h3>
+                      <a href="#">Cart</a>
+                      <a href="#">Checkout</a>
+                      <a href="#">Compare</a>
+                      <a href="#">My Account</a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div style="width: 1px; height: 20vw; margin: 2.5vw 0; background-color: #2c3e50;"></div>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div class="d-lg-flex align-items-center justify-content-center"
+                           style="width: 100%; padding: 2.2vw; position: relative">
+                        <img style="width: 20vw" src="./assets/imgs/nav-bar-img.jpg" alt="see here">
+                        <div class="d-flex flex-column align-items-center justify-content-center"
+                          style="position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          background-color: rgba(255,255,255,0.5);">
+                          <h4 style="margin: 0; font-weight: bold; font-size: 1.5vw">WOMEN'S FASHION</h4>
+                          <h4 style="margin: 0; font-size: 1.2vw; color: red">25% OFF</h4>
+                          <h4 style="margin: 0; font-size: 1.1vw; text-decoration: underline">Shop Now</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
               </li>
               <li class="nav-item dropdown">
-                <a [mat-menu-trigger-for]="blog" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a [mat-menu-trigger-for]="blog" class="nav-link dropdown-toggle" href="#" role="button"
+                   data-bs-toggle="dropdown"
                    aria-expanded="false">
                   Blog
                 </a>
+
                 <mat-menu #blog="matMenu">
                   <button mat-menu-item [matMenuTriggerFor]="blogLayout">Blog Layout</button>
                   <button mat-menu-item [matMenuTriggerFor]="blogMasonry">Blog Masonry</button>
@@ -135,10 +211,9 @@
                   <button mat-menu-item>Audio Post</button>
                   <button mat-menu-item>Video Post</button>
                 </mat-menu>
-
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" routerLink="/contact">Contact</a>
               </li>
             </ul>
           </div>
