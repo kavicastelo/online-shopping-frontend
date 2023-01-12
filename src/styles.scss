@@ -127,7 +127,7 @@
 
 .navbar-b .dropdown-menu {
   margin: 1.12rem 0 0;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .navbar-b .dropdown-menu .dropdown-item {
@@ -136,7 +136,7 @@
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #c0392b;
+  background-color: rgba(223, 230, 233,0.4);
   color: #000000;
   transition: all 500ms ease;
 }
