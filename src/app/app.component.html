@@ -172,20 +172,18 @@
 
               </li>
               <li class="nav-item dropdown">
-                <a [mat-menu-trigger-for]="blog" class="nav-link dropdown-toggle" href="#" role="button"
-                   data-bs-toggle="dropdown"
-                   aria-expanded="false">
+                <a [mat-menu-trigger-for]="blog" class="nav-link mat-menu-hover">
                   Blog
                 </a>
 
-                <mat-menu #blog="matMenu" style="z-index: 5">
+                <mat-menu #blog="matMenu" class="ng-deep mat-menu-panel">
                   <button mat-menu-item [matMenuTriggerFor]="blogLayout">Blog Layout</button>
                   <button mat-menu-item [matMenuTriggerFor]="blogMasonry">Blog Masonry</button>
                   <button mat-menu-item [matMenuTriggerFor]="blogList">Blog List</button>
                   <button mat-menu-item [matMenuTriggerFor]="blogSingle">Blog Single</button>
                 </mat-menu>
 
-                <mat-menu #blogLayout="matMenu">
+                <mat-menu #blogLayout="matMenu" class="ng-deep">
                   <button mat-menu-item>Blog Standard Full Width</button>
                   <button mat-menu-item>Blog Standard Left Side</button>
                   <button mat-menu-item>Blog Standard Right Side</button>
@@ -193,19 +191,19 @@
                   <button mat-menu-item>Blog Grid Right Sidebar</button>
                 </mat-menu>
 
-                <mat-menu #blogMasonry="matMenu">
+                <mat-menu #blogMasonry="matMenu" class="ng-deep">
                   <button mat-menu-item>Masonry 3 Columns</button>
                   <button mat-menu-item>Masonry 4 Columns</button>
                   <button mat-menu-item>Masonry Right Sidebar</button>
                   <button mat-menu-item>Masonry Left Sidebar</button>
                 </mat-menu>
 
-                <mat-menu #blogList="matMenu">
+                <mat-menu #blogList="matMenu" class="ng-deep">
                   <button mat-menu-item>List Left Sidebar</button>
                   <button mat-menu-item>List Right Sidebar</button>
                 </mat-menu>
 
-                <mat-menu #blogSingle="matMenu">
+                <mat-menu #blogSingle="matMenu" class="ng-deep">
                   <button mat-menu-item>Default</button>
                   <button mat-menu-item>slide bar</button>
                   <button mat-menu-item>Audio Post</button>

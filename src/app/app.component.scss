@@ -125,3 +125,14 @@
     }
   }
 }
+
+
+.mat-menu-hover {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+::ng-deep .mat-menu-panel button:hover{
+  color: #c0392b;
+}
