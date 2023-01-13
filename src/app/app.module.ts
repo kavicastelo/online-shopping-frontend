@@ -17,6 +17,13 @@ import { ContactComponent } from './components/contact/contact.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import { ProductDefaultComponent } from './components/PRODUCT_DETAILS/product-default/product-default.component';
+import { ProductLeftComponent } from './components/PRODUCT_DETAILS/product-left/product-left.component';
+import { ProductRightComponent } from './components/PRODUCT_DETAILS/product-right/product-right.component';
+import {MatSliderModule} from "@angular/material/slider";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {MatCardModule} from "@angular/material/card";
+import {MatRadioModule} from "@angular/material/radio";
 
 @NgModule({
   declarations: [
@@ -25,7 +32,10 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
     NotFoundComponent,
     AboutComponent,
     FAQComponent,
-    ContactComponent
+    ContactComponent,
+    ProductDefaultComponent,
+    ProductLeftComponent,
+    ProductRightComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +50,10 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
     MatFormFieldModule,
     MatInputModule,
     MatButtonToggleModule,
+    MatSliderModule,
+    MatProgressBarModule,
+    MatCardModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

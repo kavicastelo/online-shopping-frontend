@@ -1,0 +1,139 @@
+<div class="container">
+  <div class="main-outer d-md-flex d-lg-flex">
+    <div class="left-div">
+      <h1>CATEGORIES</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Women</span>
+        <span>(10)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Men</span>
+        <span>(05)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Footwear</span>
+        <span>(15)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Bags & Backpacks</span>
+        <span>(20)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Accessories</span>
+        <span>(07)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+
+      <h1>FILTER</h1>
+      <hr>
+      <mat-slider
+        thumbLabel
+        [displayWith]="formatLabel"
+        tickInterval="auto"
+        min="100"
+        max="5000"
+        step="298"
+        [(ngModel)]="value"
+
+        style="width: 100%"
+      ></mat-slider>
+      <h2 style="font-size: 16px">MAX-PRICE - ${{value}}</h2>
+
+      <h1>COLOR</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Black</span>
+        <span>(10)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Blue</span>
+        <span>(05)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Red</span>
+        <span>(15)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>White</span>
+        <span>(20)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Gray</span>
+        <span>(07)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+
+      <h1>RECENT PRODUCTS</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-1.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-2.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="text-decoration: dotted">
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-3.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="text-decoration: dotted">
+
+    </div>
+
+    <div class="right-div">
+      <div class="d-lg-flex right-top">
+        <div class="product-main-img">
+          <img src="./assets/imgs/model-1.jpg" alt="product">
+        </div>
+        <div class="product-main-content">
+          <h1>Ornare sed consequat</h1>
+          <span><del>$120.00</del>&nbsp;&nbsp;&nbsp;<span>$99.00</span></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deleniti dicta doloribus eligendi eos
+            excepturi expedita illo ipsam iste neque, nisi numquam perspiciatis, repudiandae voluptas.</p>
+          <hr>
+
+          <div class="d-flex justify-content-between right-2">
+            <div class="d-flex flex-column">
+              <p>Availability: &nbsp;<span style="font-size: 16px; font-weight: normal">{{cartText}}</span></p>
+              <div class="d-flex align-items-center">
+                <button (click)="decreaseValue()">-</button>&nbsp;
+                <h4 style="margin: 0">{{cartValue}}</h4>&nbsp;
+                <button (click)="increaseValue()">+</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <button class="add-to-cart-btn"><mat-icon>add_shopping_cart</mat-icon> Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

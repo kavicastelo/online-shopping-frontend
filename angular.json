@@ -35,8 +35,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss",
-              "@NgModule"
+              "src/styles.scss"
             ],
             "scripts": []
           },

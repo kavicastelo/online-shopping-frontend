@@ -1,0 +1,104 @@
+.main-outer{
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+
+  .left-div{
+    padding: 0 1.5vw;
+
+    h1{
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    span{
+      font-size: 16px;
+      font-family: 'Barlow', sans-serif;
+      color: dimgray;
+    }
+    span:hover{
+      color: #c0392b;
+      cursor: pointer;
+    }
+
+    mat-slider {
+      width: 300px;
+    }
+  }
+
+  .right-div{
+    flex: 1;
+
+    .right-top{
+      width: 100%;
+
+      .product-main-img{
+        width: 100%;
+        height: auto;
+        padding: 5px;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      .product-main-content{
+        min-width: 300px;
+        padding: 0 20px;
+
+        h1{
+          font-size: 30px;
+          font-weight: bold;
+          font-family: 'Barlow', sans-serif;
+        }
+
+        span{
+          font-size: 22px;
+          color: red;
+          font-weight: bold;
+
+          del{
+            color: dimgray;
+            font-size: 18px;
+          }
+        }
+
+        p{
+          color: dimgray;
+          font-family: 'Barlow', sans-serif;
+          font-size: 16px;text-align: justify;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .right-2{
+      button{
+        padding: 10px;
+        border: none;
+        color: white;
+        background-color: #2c3e50;
+        font-size: 14px;
+      }
+
+      .add-to-cart-btn{
+        border: none;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 10px 15px;
+
+        .mat-icon{
+          font-size: 19px;
+        }
+      }
+      .add-to-cart-btn:hover{
+        background-color: #c0392b;
+      }
+    }
+  }
+
+}
