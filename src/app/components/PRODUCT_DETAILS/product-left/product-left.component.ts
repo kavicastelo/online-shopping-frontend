@@ -12,6 +12,10 @@ export class ProductLeftComponent implements OnInit {
   cartValue: number = 1
   cartText: string = 'In Stock'
 
+  descActive:boolean =true
+  infoActive:boolean =false
+  reviewActive:boolean =false
+
   formatLabel(value: number | null) {
     if (!value) {
       return 0;
@@ -45,6 +49,28 @@ export class ProductLeftComponent implements OnInit {
       else {
         this.cartText = 'In Stock'
       }
+    }
+  }
+
+  descClick(){
+    this.descActive =! this.descActive;
+    if (this.descActive){
+      this.infoActive = false
+      this.reviewActive = false
+    }
+  }
+  infoClick(){
+    this.infoActive =! this.infoActive;
+    if (this.infoActive){
+      this.descActive = false
+      this.reviewActive = false
+    }
+  }
+  reviewClick(){
+    this.reviewActive =! this.reviewActive;
+    if (this.reviewActive){
+      this.descActive = false
+      this.infoActive = false
     }
   }
 

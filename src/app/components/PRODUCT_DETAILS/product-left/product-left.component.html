@@ -37,7 +37,7 @@
         tickInterval="auto"
         min="100"
         max="5000"
-        step="298"
+        step="300"
         [(ngModel)]="value"
 
         style="width: 100%"
@@ -112,6 +112,7 @@
         <div class="product-main-img">
           <img src="./assets/imgs/model-1.jpg" alt="product">
         </div>
+
         <div class="product-main-content">
           <h1>Ornare sed consequat</h1>
           <span><del>$120.00</del>&nbsp;&nbsp;&nbsp;<span>$99.00</span></span>
@@ -129,10 +130,52 @@
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <button class="add-to-cart-btn"><mat-icon>add_shopping_cart</mat-icon> Add to cart</button>
+              <button class="add-to-cart-btn">
+                <mat-icon>add_shopping_cart</mat-icon>
+                Add to cart
+              </button>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="d-lg-flex d-md-flex align-items-start justify-content-between product-right-3">
+        <div class="product-right-3-start">
+          <img src="./assets/imgs/model-1.jpg" alt="1">
+          <img src="./assets/imgs/model-1.jpg" alt="2">
+        </div>
+
+        <div class="product-right-3-center d-flex justify-content-center">
+          <div style="background-color: #2c3e50; padding: 5px; border-radius: 100%; margin: 10px"
+               class="d-flex align-items-center justify-content-center">
+            <mat-icon style="color: white; font-size: 24px">favorite</mat-icon>
+          </div>
+          <div style="background-color: #2c3e50; padding: 5px; border-radius: 100%; margin: 10px"
+               class="d-flex align-items-center justify-content-center">
+            <mat-icon style="color: white; font-size: 24px">autorenew</mat-icon>
+          </div>
+        </div>
+
+        <div class="product-right-3-end">
+          <div class="social-btn-set">
+            <div style="background-color: #2c3e50; padding: 7px; margin: 0 2px"><i class="fa-brands fa-facebook-f"></i></div>
+            <div style="background-color: #2c3e50; padding: 7px; margin: 0 2px"><i class="fa-brands fa-twitter"></i></div>
+            <div style="background-color: #2c3e50; padding: 7px; margin: 0 2px"><i class="fa-brands fa-linkedin"></i></div>
+            <div style="background-color: #2c3e50; padding: 7px; margin: 0 2px"><i class="fa-brands fa-pinterest"></i></div>
+            <div style="background-color: #2c3e50; padding: 7px; margin: 0 2px"><i class="fa-brands fa-google-plus"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column product-right-4">
+        <div class="d-lg-flex">
+          <div><button id="desc" (click)="descClick()" [ngStyle]="{'background-color': descActive ? 'red' : 'white'}">DESCRIPTION</button></div>
+          <div><button id="info" (click)="infoClick()" [ngStyle]="{'background-color': infoActive ? 'red' : 'white'}">ADDITIONAL INFORMATION</button></div>
+          <div><button id="review" (click)="reviewClick()" [ngStyle]="{'background-color': reviewActive ? 'red' : 'white'}">REVIEWS(02)</button></div>
+        </div>
+        <div class="load-desc" [ngStyle]="{'display': descActive ? 'block' : 'none'}"></div>
+        <div class="load-info" [ngStyle]="{'display': infoActive ? 'block' : 'none'}"></div>
+        <div class="load-review" [ngStyle]="{'display': reviewActive ? 'block' : 'none'}"></div>
       </div>
     </div>
   </div>

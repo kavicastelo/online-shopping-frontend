@@ -71,34 +71,104 @@
           margin-top: 15px;
         }
       }
-    }
 
-    .right-2{
-      button{
-        padding: 10px;
-        border: none;
-        color: white;
-        background-color: #2c3e50;
-        font-size: 14px;
-      }
+      .right-2{
+        button{
+          padding: 10px;
+          border: none;
+          color: white;
+          background-color: #2c3e50;
+          font-size: 14px;
+        }
 
-      .add-to-cart-btn{
-        border: none;
-        background-color: red;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        border-radius: 30px;
-        padding: 10px 15px;
+        .add-to-cart-btn{
+          border: none;
+          background-color: red;
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          border-radius: 30px;
+          padding: 10px 15px;
 
-        .mat-icon{
-          font-size: 19px;
+          .mat-icon{
+            font-size: 19px;
+          }
+        }
+        .add-to-cart-btn:hover{
+          background-color: #c0392b;
         }
       }
-      .add-to-cart-btn:hover{
-        background-color: #c0392b;
+    }
+
+    .product-right-3{
+      width: 100%;
+      height: auto;
+
+      .product-right-3-start{
+        height: 80px;
+        overflow: hidden;
+
+        img{
+          width: 70px;
+          margin: 8px;
+        }
+      }
+
+      .product-right-3-end{
+        .social-btn-set{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 5px;
+
+          i{
+            margin: 0 10px;
+            color: white;
+            font-size: 18px;
+          }
+          i:hover{
+            color: #c0392b;
+            cursor: pointer;
+          }
+        }
       }
     }
+
+    .product-right-4{
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      border: 1px solid red;
+
+      button{
+        width: 100%;
+      }
+
+      .load-desc{
+        width: 100%;
+        min-height: 100px;
+        height: auto;
+        border: 1px solid black;
+        display: none;
+      }
+
+      .load-info{
+        width: 100%;
+        min-height: 100px;
+        height: auto;
+        border: 1px solid red;
+        display: none;
+      }
+
+      .load-review{
+        width: 100%;
+        min-height: 100px;
+        height: auto;
+        border: 1px solid green;
+        display: none;
+      }
+    }
+
   }
 
 }
