@@ -142,6 +142,11 @@
 
       button{
         width: 100%;
+        border: none;
+        padding: 5px 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
       }
 
       .load-desc{
@@ -149,6 +154,7 @@
         min-height: 100px;
         height: auto;
         border: 1px solid black;
+        padding: 20px;
         display: none;
       }
 
@@ -156,8 +162,15 @@
         width: 100%;
         min-height: 100px;
         height: auto;
+        padding: 20px;
         border: 1px solid red;
         display: none;
+
+        td{
+          color: dimgray;
+          font-size: 18px;
+          font-family: 'Barlow', sans-serif;
+        }
       }
 
       .load-review{
