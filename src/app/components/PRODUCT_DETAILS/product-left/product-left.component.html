@@ -7,22 +7,22 @@
         <span>Women</span>
         <span>(10)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>Men</span>
         <span>(05)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>Footwear</span>
         <span>(15)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>Bags & Backpacks</span>
         <span>(20)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>Accessories</span>
         <span>(07)</span>
@@ -50,27 +50,27 @@
         <span>Black</span>
         <span>(10)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>Blue</span>
         <span>(05)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>Red</span>
         <span>(15)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>White</span>
         <span>(20)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <span>Gray</span>
         <span>(07)</span>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
 
       <h1>RECENT PRODUCTS</h1>
       <hr>
@@ -83,7 +83,7 @@
           <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
         </div>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <div style="width: 80px; height: 80px; overflow: hidden">
           <img style="width: 100%" src="./assets/imgs/model-2.jpg" alt="model 1">
@@ -93,7 +93,7 @@
           <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
         </div>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
       <div class="d-flex align-items-center justify-content-between">
         <div style="width: 80px; height: 80px; overflow: hidden">
           <img style="width: 100%" src="./assets/imgs/model-3.jpg" alt="model 1">
@@ -103,7 +103,7 @@
           <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
         </div>
       </div>
-      <hr style="text-decoration: dotted">
+      <hr style="border-top: 1px dashed dimgray;">
 
     </div>
 
@@ -197,6 +197,7 @@
             ea earum enim incidunt ipsam laboriosam laborum minima minus modi molestiae nesciunt nostrum obcaecati odit
             officiis optio pariatur praesentium quasi quidem quos reiciendis, sed suscipit tempora veritatis.</p>
         </div>
+
         <div class="load-info" [ngStyle]="{'display': infoActive ? 'block' : 'none'}">
           <h3 style="font-weight: bold">ADDITIONAL INFORMATION</h3>
           <table class="table table-hover">
@@ -224,8 +225,256 @@
             </tbody>
           </table>
         </div>
-        <div class="load-review" [ngStyle]="{'display': reviewActive ? 'block' : 'none'}"></div>
+
+        <div class="load-review" [ngStyle]="{'display': reviewActive ? 'block' : 'none'}">
+          <h3 style="font-weight: bold">CUSTOMER REVIEWS</h3>
+          <div class="d-flex">
+            <div class="reviewer-profile">
+              <img src="./assets/imgs/empty-user-profile.png" alt="profile">
+            </div>
+            <div class="d-flex flex-column justify-content-center" style="padding-left: 10px">
+              <h4>admin</h4>
+              <h5>January 14, 2023</h5>
+              <h4>24/7 helpdesk is also available. I Love it!</h4>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <div class="reviewer-profile">
+              <img src="./assets/imgs/empty-user-profile.png" alt="profile">
+            </div>
+            <div class="d-flex flex-column justify-content-center" style="padding-left: 10px">
+              <h4>admin</h4>
+              <h5>January 14, 2023</h5>
+              <h4>24/7 helpdesk is also available. I Love it!</h4>
+            </div>
+          </div>
+          <hr>
+
+          <h3 style="font-weight: bold">ADD A REVIEWS</h3>
+<!--          form start-->
+          <form class="contact-form">
+
+            <div class="d-lg-flex d-md-flex" style="width: 100%">
+              <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+                <mat-label>Name</mat-label>
+                <input matInput [formControl]="nameFormControl" placeholder="Ex. kavindu kokila">
+                <mat-error *ngIf="nameFormControl.hasError('required')">
+                  Name is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <div class="d-flex" style="width: 100%">
+              <mat-form-field class="contact-form-full-width" appearance="outline" color="accent">
+                <mat-label>Message</mat-label>
+                <textarea matInput [formControl]="messageFormControl" placeholder="Ex. Message"></textarea>
+                <mat-error *ngIf="messageFormControl.hasError('required')">
+                  Message is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <button class="submit-btn">Submit</button>
+          </form>
+<!--          form end-->
+        </div>
       </div>
+
+      <div class="product-right-5">
+
+        <div class="title1">
+          <div class="d-flex align-items-center justify-content-center flex-column" style="padding: 5vw 0">
+            <h1>RELATED PRODUCTS</h1>
+            <div style="width: 10%; height: 3px; border-radius: 5px; background-color: #c0392b"></div>
+          </div>
+        </div>
+
+        <div class="popular-products">
+          <div class="popular-products-inner">
+            <div class="product-item">
+              <img src="./assets/imgs/model-1.jpg" alt="model 1">
+              <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+                <button>Add to Cart</button>
+                <div class="product-buttons d-flex justify-content-between">
+                  <button>
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="product-det">
+                  <h2>Product 001</h2>
+                  <div class="product-price d-flex justify-content-center">
+                    <div class="disable-price">
+                      <del>$84.00</del>
+                    </div>&nbsp;&nbsp;
+                    <div class="price"> $78.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./assets/imgs/model-2.jpg" alt="model 1">
+              <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+                <button>Add to Cart</button>
+                <div class="product-buttons d-flex justify-content-between">
+                  <button>
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="product-det">
+                  <h2>Product 002</h2>
+                  <div class="product-price d-flex justify-content-center">
+                    <div class="disable-price">
+                      <del>$84.00</del>
+                    </div>&nbsp;&nbsp;
+                    <div class="price"> $78.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./assets/imgs/model-3.jpg" alt="model 1">
+              <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+                <button>Add to Cart</button>
+                <div class="product-buttons d-flex justify-content-between">
+                  <button>
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="product-det">
+                  <h2>Product 003</h2>
+                  <div class="product-price d-flex justify-content-center">
+                    <div class="disable-price">
+                      <del>$84.00</del>
+                    </div>&nbsp;&nbsp;
+                    <div class="price"> $78.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./assets/imgs/model-4.jpg" alt="model 1">
+              <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+                <button>Add to Cart</button>
+                <div class="product-buttons d-flex justify-content-between">
+                  <button>
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="product-det">
+                  <h2>Product 004</h2>
+                  <div class="product-price d-flex justify-content-center">
+                    <div class="disable-price">
+                      <del>$84.00</del>
+                    </div>&nbsp;&nbsp;
+                    <div class="price"> $78.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./assets/imgs/model-5.jpg" alt="model 1">
+              <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+                <button>Add to Cart</button>
+                <div class="product-buttons d-flex justify-content-between">
+                  <button>
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="product-det">
+                  <h2>Product 005</h2>
+                  <div class="product-price d-flex justify-content-center">
+                    <div class="disable-price">
+                      <del>$84.00</del>
+                    </div>&nbsp;&nbsp;
+                    <div class="price"> $78.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./assets/imgs/model-6.jpg" alt="model 1">
+              <div class="product-content fade d-flex flex-column align-item-center justify-content-center">
+                <button>Add to Cart</button>
+                <div class="product-buttons d-flex justify-content-between">
+                  <button>
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <button>
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="product-det">
+                  <h2>Product 006</h2>
+                  <div class="product-price d-flex justify-content-center">
+                    <div class="disable-price">
+                      <del>$84.00</del>
+                    </div>&nbsp;&nbsp;
+                    <div class="price"> $78.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-product-left',
@@ -15,6 +16,10 @@ export class ProductLeftComponent implements OnInit {
   descActive:boolean =true
   infoActive:boolean =false
   reviewActive:boolean =false
+
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+  nameFormControl = new FormControl('', [Validators.required]);
+  messageFormControl = new FormControl('', [Validators.required]);
 
   formatLabel(value: number | null) {
     if (!value) {
