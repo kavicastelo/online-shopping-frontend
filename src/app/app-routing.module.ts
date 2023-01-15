@@ -8,6 +8,12 @@ import {ContactComponent} from "./components/contact/contact.component";
 import {ProductDefaultComponent} from "./components/PRODUCT_DETAILS/product-default/product-default.component";
 import {ProductLeftComponent} from "./components/PRODUCT_DETAILS/product-left/product-left.component";
 import {ProductRightComponent} from "./components/PRODUCT_DETAILS/product-right/product-right.component";
+import {ShopListViewComponent} from "./components/SHOP_PAGES/shop-list-view/shop-list-view.component";
+import {ShopGridViewComponent} from "./components/SHOP_PAGES/shop-grid-view/shop-grid-view.component";
+import {ShopComponent} from "./components/SHOP_PAGES/shop/shop.component";
+import {ShopLeftSidebarComponent} from "./components/SHOP_PAGES/shop-left-sidebar/shop-left-sidebar.component";
+import {ShopRightSidebarComponent} from "./components/SHOP_PAGES/shop-right-sidebar/shop-right-sidebar.component";
+import {ShopListComponent} from "./components/SHOP_PAGES/shop-list/shop-list.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home", pathMatch:"full"},
@@ -18,6 +24,16 @@ const routes: Routes = [
   {path:"product-default",component:ProductDefaultComponent},
   {path:"product-left-side",component:ProductLeftComponent},
   {path:"product-right-side",component:ProductRightComponent},
+  {path:"shop",component:ShopComponent,children:[
+      {path:"", redirectTo:"/shop/shop-list",pathMatch:"full"},
+      {path:"shop-list-view",component:ShopListViewComponent, children:[
+          {path:"", redirectTo:"/shop/shop-list-view/shop-list",pathMatch:"full"},
+          {path:"shop-list",component:ShopListComponent},
+          {path:"shop-grid",component:ShopGridViewComponent},
+        ]},
+      {path:"shop-left-side",component:ShopLeftSidebarComponent},
+      {path:"shop-right-side",component:ShopRightSidebarComponent},
+    ]},
   {path:"**", component:NotFoundComponent}
 ];
 

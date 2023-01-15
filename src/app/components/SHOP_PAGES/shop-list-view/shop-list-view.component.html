@@ -1,0 +1,157 @@
+<div class="main-thumbnail">
+  <img src="./assets/imgs/shop-list-main-banner.jpg" alt="">
+  <div class="main-banner-content">
+    <h1>Product Left Layout</h1>
+    <span routerLink="/home">Home</span> / <span routerLink="">shop</span> / Shop List Layout
+  </div>
+</div>
+
+<div class="container">
+  <div class="main-outer d-md-flex d-lg-flex">
+    <div class="left-div">
+      <h1>CATEGORIES</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Women</span>
+        <span>(10)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Men</span>
+        <span>(05)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Footwear</span>
+        <span>(15)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Bags & Backpacks</span>
+        <span>(20)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Accessories</span>
+        <span>(07)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+
+      <h1>FILTER</h1>
+      <hr>
+      <mat-slider
+        thumbLabel
+        [displayWith]="formatLabel"
+        tickInterval="auto"
+        min="100"
+        max="5000"
+        step="300"
+        [(ngModel)]="value"
+
+        style="width: 100%"
+      ></mat-slider>
+      <h2 style="font-size: 16px">MAX-PRICE - ${{value}}</h2>
+
+      <h1>COLOR</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Black</span>
+        <span>(10)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Blue</span>
+        <span>(05)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Red</span>
+        <span>(15)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>White</span>
+        <span>(20)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Gray</span>
+        <span>(07)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+
+      <h1>RECENT PRODUCTS</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-1.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-2.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-3.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+
+    </div>
+
+    <div class="right-div">
+      <div class="d-md-flex d-lg-flex right-top justify-content-between align-items-center">
+
+        <div class="d-flex d-sm-flex align-items-center justify-content-center" style="width: 100%">
+          <mat-form-field appearance="outline">
+            <mat-label>Default Sorting</mat-label>
+            <mat-select [(value)]="selectedSort">
+              <mat-option></mat-option>
+              <mat-option [value]="option.value" *ngFor="let option of sorts">{{ option.viewValue }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="d-flex d-sm-flex flex-column align-items-center justify-content-center"
+             style="width: 100%; border: 1px solid red">
+
+          <div class="d-md-flex d-lg-flex align-items-center">
+            <div style="border: 1px solid red; width: fit-content">
+              <span style="text-align: center">Showing 1-9 of 15 results</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="d-sm-flex d-md-flex-d-lg-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center icon-wrapper" routerLink="/shop/shop-list-view/shop-list">
+                  <mat-icon>menu</mat-icon>
+                </div>
+                <div class="d-flex align-items-center justify-content-center icon-wrapper" routerLink="/shop/shop-list-view/shop-grid">
+                  <mat-icon>apps</mat-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+</div>

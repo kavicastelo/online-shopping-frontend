@@ -24,6 +24,13 @@ import {MatSliderModule} from "@angular/material/slider";
 import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {MatCardModule} from "@angular/material/card";
 import {MatRadioModule} from "@angular/material/radio";
+import { ShopListViewComponent } from './components/SHOP_PAGES/shop-list-view/shop-list-view.component';
+import { ShopGridViewComponent } from './components/SHOP_PAGES/shop-grid-view/shop-grid-view.component';
+import { ShopLeftSidebarComponent } from './components/SHOP_PAGES/shop-left-sidebar/shop-left-sidebar.component';
+import { ShopRightSidebarComponent } from './components/SHOP_PAGES/shop-right-sidebar/shop-right-sidebar.component';
+import { ShopComponent } from './components/SHOP_PAGES/shop/shop.component';
+import {MatSelectModule} from "@angular/material/select";
+import { ShopListComponent } from './components/SHOP_PAGES/shop-list/shop-list.component';
 
 @NgModule({
   declarations: [
@@ -35,26 +42,33 @@ import {MatRadioModule} from "@angular/material/radio";
     ContactComponent,
     ProductDefaultComponent,
     ProductLeftComponent,
-    ProductRightComponent
+    ProductRightComponent,
+    ShopListViewComponent,
+    ShopGridViewComponent,
+    ShopLeftSidebarComponent,
+    ShopRightSidebarComponent,
+    ShopComponent,
+    ShopListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatExpansionModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonToggleModule,
-    MatSliderModule,
-    MatProgressBarModule,
-    MatCardModule,
-    MatRadioModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatExpansionModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonToggleModule,
+        MatSliderModule,
+        MatProgressBarModule,
+        MatCardModule,
+        MatRadioModule,
+        MatSelectModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
