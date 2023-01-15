@@ -62,11 +62,9 @@
 
   .right-div{
     flex: 1;
-    border: 1px solid red;
 
     .right-top{
       width: 100%;
-      border: 1px solid red;
 
       span{
         color: dimgray;
@@ -78,7 +76,6 @@
       .icon-wrapper{
         padding: 10px;
         margin-right: 5px;
-        border: 1px solid red
       }
       .icon-wrapper:hover{
         cursor: pointer;
