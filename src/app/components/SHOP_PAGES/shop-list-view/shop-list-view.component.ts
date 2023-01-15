@@ -21,6 +21,24 @@ export class ShopListViewComponent implements OnInit {
   ];
   selectedSort = this.sorts[0].value;
 
+
+  listActive:boolean =true
+  gridActive:boolean =false
+
+  listClick(){
+    this.listActive =! this.listActive;
+    if (this.listActive){
+      this.gridActive = false
+    }
+  }
+  gridClick(){
+    this.gridActive =! this.gridActive;
+    if (this.gridActive){
+      this.listActive = false
+    }
+  }
+
+
   value: number = 100;
   price: number = 0;
 

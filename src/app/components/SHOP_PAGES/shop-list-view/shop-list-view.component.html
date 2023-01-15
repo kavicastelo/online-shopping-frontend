@@ -137,11 +137,17 @@
             </div>
             <div class="d-flex align-items-center justify-content-center">
               <div class="d-sm-flex d-md-flex-d-lg-flex align-items-center justify-content-center">
-                <div class="d-flex align-items-center justify-content-center icon-wrapper" routerLink="/shop/shop-list-view/shop-list">
-                  <mat-icon>menu</mat-icon>
+                <div class="d-flex align-items-center justify-content-center icon-wrapper"
+                     routerLink="/shop/shop-list-view/shop-list"
+                (click)="listClick()"
+                [ngStyle]="{'background-color' : listActive ? 'red':'#2c3e50'}">
+                  <mat-icon style="color: white">menu</mat-icon>
                 </div>
-                <div class="d-flex align-items-center justify-content-center icon-wrapper" routerLink="/shop/shop-list-view/shop-grid">
-                  <mat-icon>apps</mat-icon>
+                <div class="d-flex align-items-center justify-content-center icon-wrapper"
+                     routerLink="/shop/shop-list-view/shop-grid"
+                     (click)="gridClick()"
+                     [ngStyle]="{'background-color' : gridActive ? 'red':'#2c3e50'}">
+                  <mat-icon style="color: white">apps</mat-icon>
                 </div>
               </div>
             </div>
