@@ -14,6 +14,8 @@ import {ShopComponent} from "./components/SHOP_PAGES/shop/shop.component";
 import {ShopLeftSidebarComponent} from "./components/SHOP_PAGES/shop-left-sidebar/shop-left-sidebar.component";
 import {ShopRightSidebarComponent} from "./components/SHOP_PAGES/shop-right-sidebar/shop-right-sidebar.component";
 import {ShopListComponent} from "./components/SHOP_PAGES/shop-list/shop-list.component";
+import {Column3Component} from "./components/SHOP_PAGES/column3/column3.component";
+import {Column4Component} from "./components/SHOP_PAGES/column4/column4.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home", pathMatch:"full"},
@@ -33,6 +35,8 @@ const routes: Routes = [
         ]},
       {path:"shop-left-side",component:ShopLeftSidebarComponent},
       {path:"shop-right-side",component:ShopRightSidebarComponent},
+      {path:"shop-col-3",component:Column3Component},
+      {path:"shop-col-4",component:Column4Component},
     ]},
   {path:"**", component:NotFoundComponent}
 ];

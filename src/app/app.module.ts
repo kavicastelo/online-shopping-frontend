@@ -31,6 +31,8 @@ import { ShopRightSidebarComponent } from './components/SHOP_PAGES/shop-right-si
 import { ShopComponent } from './components/SHOP_PAGES/shop/shop.component';
 import {MatSelectModule} from "@angular/material/select";
 import { ShopListComponent } from './components/SHOP_PAGES/shop-list/shop-list.component';
+import { Column3Component } from './components/SHOP_PAGES/column3/column3.component';
+import { Column4Component } from './components/SHOP_PAGES/column4/column4.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { ShopListComponent } from './components/SHOP_PAGES/shop-list/shop-list.c
     ShopLeftSidebarComponent,
     ShopRightSidebarComponent,
     ShopComponent,
-    ShopListComponent
+    ShopListComponent,
+    Column3Component,
+    Column4Component
   ],
     imports: [
         BrowserModule,
