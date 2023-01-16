@@ -37,6 +37,7 @@ import { CartComponent } from './components/EXTRA/cart/cart.component';
 import { CheckoutComponent } from './components/EXTRA/checkout/checkout.component';
 import { CompareComponent } from './components/EXTRA/compare/compare.component';
 import { MyAccountComponent } from './components/EXTRA/my-account/my-account.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { MyAccountComponent } from './components/EXTRA/my-account/my-account.com
         MatCardModule,
         MatRadioModule,
         MatSelectModule,
+        MatCheckboxModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
