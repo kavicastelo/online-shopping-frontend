@@ -1,0 +1,165 @@
+.main-thumbnail{
+  width: 100%;
+  max-height: 300px;
+  min-height: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  img{
+    width: 100%;
+  }
+
+  .main-banner-content{
+    position: absolute;
+
+    h1{
+      color: white;
+      font-size: 40px;
+      font-weight: bolder;
+      text-shadow: 0 0 10px #888;
+    }
+
+    span:hover{
+      color: #c0392b;
+      cursor: pointer;
+    }
+  }
+}
+
+.main-outer{
+  margin-top: 40px;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+
+  .left-div{
+    padding: 0 1.5vw;
+
+    h1{
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    span{
+      font-size: 16px;
+      font-family: 'Barlow', sans-serif;
+      color: dimgray;
+    }
+    span:hover{
+      color: #c0392b;
+      cursor: pointer;
+    }
+
+    mat-slider {
+      width: 300px;
+    }
+  }
+
+  .right-div{
+    flex: 1;
+
+    .items-wrapper{
+      width: 100%;
+      min-height: 200px;
+      height: auto;
+
+      .single-item{
+        .product-banner{
+          width: 270px;
+
+          img{
+            padding: 10px;
+            width: 100%;
+          }
+        }
+
+        .product-desc{
+          flex: 1;
+          padding: 10px;
+
+          h1{
+            font-family: 'Barlow', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+          }
+          h1:hover{
+            cursor: pointer;
+          }
+
+          span{
+            color: dimgray;
+            font-size: 16px;
+            font-family: 'Barlow', sans-serif;
+          }
+
+          p{
+            font-size: 16px;
+            font-family: 'Barlow', sans-serif;
+            color: dimgray;
+            margin-top: 10px;
+            text-align: justify;
+          }
+
+          .add-cart-btn{
+            width: 120px;
+            padding: 10px 1.2vw;
+            border: none;
+            border-radius: 30px;
+            background-color: red;
+            color: white;
+            margin-right: 1vw;
+          }
+          .add-cart-btn:hover{
+            background-color: #c0392b;
+            cursor: pointer;
+          }
+
+          .product-buttons{
+            button{
+              margin-left: 0.5vw;
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+              border: none;
+              background-color: #2c3e50;
+              color: white;
+              padding: 3px;
+            }
+            button:hover{
+              background-color: red;
+            }
+          }
+        }
+      }
+      .single-item:hover{
+        .product-desc>h1{
+          color: red;
+        }
+      }
+
+      .nav-end-btn-set{
+        margin-bottom: 40px;
+
+        button{
+          width: 35px;
+          height: 35px;
+          background-color: black;
+          color: white;
+          margin: 0 2px;
+          border: none;
+        }
+        button:hover{
+          background-color: red;
+          transition: 500ms;
+        }
+      }
+    }
+
+  }
+
+}

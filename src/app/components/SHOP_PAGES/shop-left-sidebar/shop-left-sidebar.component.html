@@ -1,1 +1,393 @@
-<p>shop-left-sidebar works!</p>
+<div class="main-thumbnail">
+  <img src="./assets/imgs/shop-list-main-banner.jpg" alt="">
+  <div class="main-banner-content">
+    <h1>Product List</h1>
+    <span routerLink="/home">Home</span> / Shop
+  </div>
+</div>
+
+<div class="container">
+  <div class="main-outer d-md-flex d-lg-flex">
+    <div class="left-div">
+      <h1>CATEGORIES</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Women</span>
+        <span>(10)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Men</span>
+        <span>(05)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Footwear</span>
+        <span>(15)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Bags & Backpacks</span>
+        <span>(20)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Accessories</span>
+        <span>(07)</span>
+      </div>
+      <hr style="text-decoration: dotted">
+
+      <h1>FILTER</h1>
+      <hr>
+      <mat-slider
+        thumbLabel
+        [displayWith]="formatLabel"
+        tickInterval="auto"
+        min="100"
+        max="5000"
+        step="300"
+        [(ngModel)]="value"
+
+        style="width: 100%"
+      ></mat-slider>
+      <h2 style="font-size: 16px">MAX-PRICE - ${{value}}</h2>
+
+      <h1>COLOR</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Black</span>
+        <span>(10)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Blue</span>
+        <span>(05)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Red</span>
+        <span>(15)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>White</span>
+        <span>(20)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <span>Gray</span>
+        <span>(07)</span>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+
+      <h1>RECENT PRODUCTS</h1>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-1.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-2.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+      <div class="d-flex align-items-center justify-content-between">
+        <div style="width: 80px; height: 80px; overflow: hidden">
+          <img style="width: 100%" src="./assets/imgs/model-3.jpg" alt="model 1">
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center" style="padding-left: 1vw">
+          <span style="color: black;font-weight: bold">Ornare sed consequat</span>
+          <span style="font-size: 15px"><mat-icon style="font-size: 14px">comment</mat-icon>5 Comments</span>
+        </div>
+      </div>
+      <hr style="border-top: 1px dashed dimgray;">
+
+    </div>
+
+    <div class="right-div">
+      <div class="items-wrapper">
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-1.jpg" alt="product 1">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-2.jpg" alt="product 2">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-3.jpg" alt="product 3">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-4.jpg" alt="product 4">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-5.jpg" alt="product 5">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-6.jpg" alt="product 6">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-7.jpg" alt="product 7">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-8.jpg" alt="product 8">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-center single-item">
+          <div class="product-banner">
+            <img src="./assets/imgs/model-9.jpg" alt="product 9">
+          </div>
+          <div class="product-desc">
+            <h1 routerLink="/product-default">Ornare sed consequat</h1>
+            <span><del>$110.00</del> <span style="color: red"> &nbsp;$89.00</span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto ducimus hic nam nisi quas
+              quidem rerum tenetur vero. Harum non quis reiciendis soluta?Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Beatae, modi.</p>
+            <div class="d-flex align-items-center justify-content-start" style="margin-top: 50px">
+              <button class="add-cart-btn">add to cart</button>
+              <div class="product-buttons d-flex justify-content-between">
+                <button>
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>visibility</mat-icon>
+                </button>
+                <button>
+                  <mat-icon>autorenew</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <!--  button set-->
+        <div class="d-flex align-items-center justify-content-center nav-end-btn-set">
+          <button style="background-color: red">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button><mat-icon>chevron_right</mat-icon></button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
