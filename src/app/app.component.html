@@ -14,7 +14,7 @@
             <div class="top-bar-1-content">
               <p><span>Login</span> &nbsp;|&nbsp;
                 <span>Wishlist</span> &nbsp;|&nbsp;
-                <span>My Account</span></p>
+                <span routerLink="/account">My Account</span></p>
             </div>
           </div>
         </div>
@@ -66,9 +66,11 @@
           </button>
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
               <li class="nav-item dropdown">
                 <a class="nav-link" routerLink="/home">Home</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" routerLink="/about">About Us</a>
               </li>
@@ -141,10 +143,10 @@
                         color: #2c3e50;
                         margin: 1vw 2vw">
                         EXTRA</h3>
-                      <a href="#">Cart</a>
-                      <a href="#">Checkout</a>
-                      <a href="#">Compare</a>
-                      <a href="#">My Account</a>
+                      <a routerLink="/cart">Cart</a>
+                      <a routerLink="/check-out">Checkout</a>
+                      <a routerLink="/compare">Compare</a>
+                      <a routerLink="/account">My Account</a>
                     </div>
 
                     <div class="d-none d-lg-block">
@@ -171,6 +173,7 @@
                 </div>
 
               </li>
+
               <li class="nav-item dropdown">
                 <a [mat-menu-trigger-for]="blog" class="nav-link mat-menu-hover">
                   Blog
@@ -210,6 +213,7 @@
                   <button mat-menu-item>Video Post</button>
                 </mat-menu>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" routerLink="/contact">Contact</a>
               </li>

@@ -16,6 +16,10 @@ import {ShopRightSidebarComponent} from "./components/SHOP_PAGES/shop-right-side
 import {ShopListComponent} from "./components/SHOP_PAGES/shop-list/shop-list.component";
 import {Column3Component} from "./components/SHOP_PAGES/column3/column3.component";
 import {Column4Component} from "./components/SHOP_PAGES/column4/column4.component";
+import {CartComponent} from "./components/EXTRA/cart/cart.component";
+import {CheckoutComponent} from "./components/EXTRA/checkout/checkout.component";
+import {CompareComponent} from "./components/EXTRA/compare/compare.component";
+import {MyAccountComponent} from "./components/EXTRA/my-account/my-account.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home", pathMatch:"full"},
@@ -27,7 +31,7 @@ const routes: Routes = [
   {path:"product-left-side",component:ProductLeftComponent},
   {path:"product-right-side",component:ProductRightComponent},
   {path:"shop",component:ShopComponent,children:[
-      {path:"", redirectTo:"/shop/shop-list",pathMatch:"full"},
+      {path:"", redirectTo:"/shop/shop-list-view/shop-list",pathMatch:"full"},
       {path:"shop-list-view",component:ShopListViewComponent, children:[
           {path:"", redirectTo:"/shop/shop-list-view/shop-list",pathMatch:"full"},
           {path:"shop-list",component:ShopListComponent},
@@ -38,6 +42,10 @@ const routes: Routes = [
       {path:"shop-col-3",component:Column3Component},
       {path:"shop-col-4",component:Column4Component},
     ]},
+  {path:"cart",component:CartComponent},
+  {path:"check-out",component:CheckoutComponent},
+  {path:"compare",component:CompareComponent},
+  {path:"account",component:MyAccountComponent},
   {path:"**", component:NotFoundComponent}
 ];
 
