@@ -38,6 +38,11 @@ import { CheckoutComponent } from './components/EXTRA/checkout/checkout.componen
 import { CompareComponent } from './components/EXTRA/compare/compare.component';
 import { MyAccountComponent } from './components/EXTRA/my-account/my-account.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import { BlogStanderedFullComponent } from './components/BLOG/BLOG_LAYOUT/blog-standered-full/blog-standered-full.component';
+import { BlogStanderedLeftSideComponent } from './components/BLOG/BLOG_LAYOUT/blog-standered-left-side/blog-standered-left-side.component';
+import { BlogStanderedRightSideComponent } from './components/BLOG/BLOG_LAYOUT/blog-standered-right-side/blog-standered-right-side.component';
+import { BlogGridLeftComponent } from './components/BLOG/BLOG_LAYOUT/blog-grid-left/blog-grid-left.component';
+import { BlogGridRightComponent } from './components/BLOG/BLOG_LAYOUT/blog-grid-right/blog-grid-right.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +66,12 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     CartComponent,
     CheckoutComponent,
     CompareComponent,
-    MyAccountComponent
+    MyAccountComponent,
+    BlogStanderedFullComponent,
+    BlogStanderedLeftSideComponent,
+    BlogStanderedRightSideComponent,
+    BlogGridLeftComponent,
+    BlogGridRightComponent
   ],
     imports: [
         BrowserModule,
