@@ -182,7 +182,7 @@
                 <mat-menu #blog="matMenu" class="ng-deep mat-menu-panel">
                   <button mat-menu-item [matMenuTriggerFor]="blogLayout">Blog Layout</button>
                   <button mat-menu-item [matMenuTriggerFor]="blogMasonry">Blog Masonry</button>
-                  <button mat-menu-item [matMenuTriggerFor]="blogList">Blog List</button>
+                  <button mat-menu-item routerLink="/blog-list">Blog List</button>
                   <button mat-menu-item [matMenuTriggerFor]="blogSingle">Blog Single</button>
                 </mat-menu>
 
@@ -195,15 +195,8 @@
                 </mat-menu>
 
                 <mat-menu #blogMasonry="matMenu" class="ng-deep">
-                  <button mat-menu-item>Masonry 3 Columns</button>
-                  <button mat-menu-item>Masonry 4 Columns</button>
-                  <button mat-menu-item>Masonry Right Sidebar</button>
-                  <button mat-menu-item>Masonry Left Sidebar</button>
-                </mat-menu>
-
-                <mat-menu #blogList="matMenu" class="ng-deep">
-                  <button mat-menu-item>List Left Sidebar</button>
-                  <button mat-menu-item>List Right Sidebar</button>
+                  <button mat-menu-item routerLink="/blog-masonry-3">Masonry 3 Columns</button>
+                  <button mat-menu-item routerLink="/blog-masonry-4">Masonry 4 Columns</button>
                 </mat-menu>
 
                 <mat-menu #blogSingle="matMenu" class="ng-deep">

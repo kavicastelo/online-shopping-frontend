@@ -43,6 +43,9 @@ import { BlogStanderedLeftSideComponent } from './components/BLOG/BLOG_LAYOUT/bl
 import { BlogStanderedRightSideComponent } from './components/BLOG/BLOG_LAYOUT/blog-standered-right-side/blog-standered-right-side.component';
 import { BlogGridLeftComponent } from './components/BLOG/BLOG_LAYOUT/blog-grid-left/blog-grid-left.component';
 import { BlogGridRightComponent } from './components/BLOG/BLOG_LAYOUT/blog-grid-right/blog-grid-right.component';
+import { BlogMasonry3ColComponent } from './components/BLOG/BLOG MASONARY/blog-masonry3-col/blog-masonry3-col.component';
+import { BlogMasonry4ColComponent } from './components/BLOG/BLOG MASONARY/blog-masonry4-col/blog-masonry4-col.component';
+import { BlogListComponent } from './components/BLOG/blog-list/blog-list.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +74,10 @@ import { BlogGridRightComponent } from './components/BLOG/BLOG_LAYOUT/blog-grid-
     BlogStanderedLeftSideComponent,
     BlogStanderedRightSideComponent,
     BlogGridLeftComponent,
-    BlogGridRightComponent
+    BlogGridRightComponent,
+    BlogMasonry3ColComponent,
+    BlogMasonry4ColComponent,
+    BlogListComponent
   ],
     imports: [
         BrowserModule,

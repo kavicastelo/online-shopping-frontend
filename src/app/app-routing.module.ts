@@ -31,6 +31,9 @@ import {
 } from "./components/BLOG/BLOG_LAYOUT/blog-standered-right-side/blog-standered-right-side.component";
 import {BlogGridLeftComponent} from "./components/BLOG/BLOG_LAYOUT/blog-grid-left/blog-grid-left.component";
 import {BlogGridRightComponent} from "./components/BLOG/BLOG_LAYOUT/blog-grid-right/blog-grid-right.component";
+import {BlogMasonry3ColComponent} from "./components/BLOG/BLOG MASONARY/blog-masonry3-col/blog-masonry3-col.component";
+import {BlogMasonry4ColComponent} from "./components/BLOG/BLOG MASONARY/blog-masonry4-col/blog-masonry4-col.component";
+import {BlogListComponent} from "./components/BLOG/blog-list/blog-list.component";
 
 const routes: Routes = [
   {path:"", redirectTo:"/home", pathMatch:"full"},
@@ -58,6 +61,9 @@ const routes: Routes = [
   {path:"blog-right",component:BlogStanderedRightSideComponent},
   {path:"blog-grid-left",component:BlogGridLeftComponent},
   {path:"blog-grid-right",component:BlogGridRightComponent},
+  {path:"blog-masonry-3",component:BlogMasonry3ColComponent},
+  {path:"blog-masonry-4",component:BlogMasonry4ColComponent},
+  {path:"blog-list",component:BlogListComponent},
   {path:"cart",component:CartComponent},
   {path:"check-out",component:CheckoutComponent},
   {path:"compare",component:CompareComponent},
