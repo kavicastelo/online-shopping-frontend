@@ -183,7 +183,7 @@
                   <button mat-menu-item [matMenuTriggerFor]="blogLayout">Blog Layout</button>
                   <button mat-menu-item [matMenuTriggerFor]="blogMasonry">Blog Masonry</button>
                   <button mat-menu-item routerLink="/blog-list">Blog List</button>
-                  <button mat-menu-item [matMenuTriggerFor]="blogSingle">Blog Single</button>
+                  <button mat-menu-item routerLink="/blog-single">Blog Single</button>
                 </mat-menu>
 
                 <mat-menu #blogLayout="matMenu" class="ng-deep">
@@ -199,12 +199,6 @@
                   <button mat-menu-item routerLink="/blog-masonry-4">Masonry 4 Columns</button>
                 </mat-menu>
 
-                <mat-menu #blogSingle="matMenu" class="ng-deep">
-                  <button mat-menu-item>Default</button>
-                  <button mat-menu-item>slide bar</button>
-                  <button mat-menu-item>Audio Post</button>
-                  <button mat-menu-item>Video Post</button>
-                </mat-menu>
               </li>
 
               <li class="nav-item">
